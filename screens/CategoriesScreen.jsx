@@ -14,15 +14,9 @@ const CategoriesScreen = ({ navigation }) => {
     );
   };
   return (
-    <FlatList style={styles.container} data={CATEGORIES} renderItem={renderCategoryItem}
+    <FlatList data={CATEGORIES} renderItem={renderCategoryItem}
               keyExtractor={(item) => item.id} numColumns={2} />
   );
 };
 
 export default CategoriesScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#fff',
-  },
-});
